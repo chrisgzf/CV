@@ -668,6 +668,25 @@
 	\skilltypestyle{#1} & \skillsetstyle{#2} \\
 }
 
+% Define an environment for cvpubs (publications)
+\newenvironment{cvpubs}{%
+  \vspace{\acvSectionContentTopSkip}
+  \vspace{-2.0mm}
+  \begin{center}
+    \setlength\tabcolsep{0.5ex}
+    \setlength{\extrarowheight}{0pt}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{\textwidth * \real{0.99}}}
+}{%
+    \end{tabular*}
+  \end{center}
+}
+
+% Define a line of cv publication
+% Usage: \cvpub{<numbering>}{<reference>}
+\newcommand*{\cvpub}[2]{%
+	\skilltypestyle{#1} & \skillsetstyle{#2} \\
+}
+
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{%
   \vspace{-4.0mm}
