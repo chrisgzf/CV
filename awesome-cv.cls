@@ -161,7 +161,6 @@
 %                Configuration for fonts
 %-------------------------------------------------------------------------------
 % Set the FontAwesome font to be up-to-date.
-\newfontfamily\FA[Path=\@fontdir]{FontAwesome}
 % Set font for header (default is Roboto)
 \newfontfamily\headerfont[
   Path=\@fontdir,
@@ -716,7 +715,7 @@
   \par\addvspace{2.5ex}
   \phantomsection{}
   \lettersectionstyle{#1}
-  \color{gray}\vhrulefill{0.9pt}
+  \color{darktext}\vhrulefill{0.9pt}
   \par\nobreak\addvspace{0.4ex}
 }
 
@@ -734,7 +733,7 @@
   \end{singlespace}
   \ifthenelse{\isundefined{\@lettertitle}}
     {}
-    {\lettertitlestyle{\@lettertitle} \\}
+    {\lettertitlestyle{\@lettertitle} \\}\\
   \lettertextstyle{\@letteropening}
 }
 
